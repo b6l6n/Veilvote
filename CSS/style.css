@@ -1,0 +1,82 @@
+body {
+    background-color: #1a0923;
+    color: white;
+    font-family: 'UnifrakturMaguntia', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #3d2456;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 10rem;
+    height: 7rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+}
+.logo h1 {
+    font-size: 2rem;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 3rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+nav ul li a:hover {
+    color: plum;
+    transition: color 0.3s;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 5rem;
+    background-color: #e5c0e5;
+    color: black;
+    text-shadow: #3d2456 0px 0px 10px;
+    font-size: 2rem;
+}
+.menu-item {
+    text-align: center;
+}
+.menu-item img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 3rem;
+    box-shadow: #1a0923 0px 0px 10px;
+}
+footer {
+    background-color: #3d2456;
+    padding: 15px;
+    margin-top: 20px;
+}
+.social-links p {
+    margin: 0;
+    font-size: 2rem;
+}
+.social-links img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem;
+    border-radius: 0.8rem;
+    box-shadow: #1a0923 0px 0px 10px;
+}

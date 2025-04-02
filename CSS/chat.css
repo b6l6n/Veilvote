@@ -1,0 +1,107 @@
+body {
+    font-family: 'UnifrakturMaguntia', cursive;
+    background-color:#dcc6e0;
+    color: white;
+    text-align: center;
+}
+.chat-container {
+    width: 100%;
+    max-width: 60rem;
+    margin: 2rem auto;
+    background: #2e103f ;
+    border-radius: 1rem;
+    padding: 1rem;;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow:black 0px 0px 10px;
+    font-size: 1.5rem;    
+}
+.message {
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    color: white;
+    box-shadow: black 0px 0px 10px;
+}
+.user {
+    align-self: flex-end;
+    background: #8a2be2;
+    box-shadow: black 0px 0px 10px;
+}
+.other {
+    align-self: flex-start;
+    background: black;
+
+}
+.input-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 75%;
+    padding: 1rem;
+    background-color: #8a2be2;
+    color: white;
+    border-radius: 2rem;
+    margin-right: 0.4rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family:'UnifrakturMaguntia', cursive ;
+    box-shadow: #1a0923 0px 0px 10px;
+}
+.send-button {
+    padding: 1rem 2rem;
+    background: #8a2be2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    font-size: 2rem;
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 1rem auto;
+    background: #222;
+    padding: 1rem;
+    border-radius: 1.7rem;
+}
+.key {
+    width: 10%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'UnifrakturMaguntia', cursive;
+    box-shadow: black 0px 0px 10px;
+}
+.key.special {
+    background: #4b0082;
+}
+footer {
+    background-color: #3d2456;
+    padding: 15px;
+    margin-top: 20px;
+}
+.social-links p {
+    margin: 0;
+    font-size: 2rem;
+}
+.social-links img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 1rem;
+    border-radius: 0.8rem;
+    box-shadow: #1a0923 0px 0px 10px;
+}
