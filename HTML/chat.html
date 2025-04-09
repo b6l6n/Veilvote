@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/chat.css">
 </head>
+
+
 <body>
     <header>
         <div class="logo">
             <img src="../IMG/veil.png" alt="Logo">
             <h1>VeilVote</h1>
         </div>
+
+
         <nav>
             <ul>
                 <li><a href="#">Mi perfil</a></li>
@@ -21,6 +25,8 @@
             </ul>
         </nav>
     </header>
+
+    <main>
     <div class="chat-container" id="chat">
         <!-- Aquí se mostrarán los mensajes -->
     </div>
@@ -28,7 +34,8 @@
         <input type="text" id="messageInput" placeholder="Escribe un mensaje..." readonly>
         <button class="send-button" onclick="sendMessage()">Enviar</button>
     </div>
-    
+
+
     <div class="keyboard">
         <button class="key">Q</button><button class="key">W</button><button class="key">E</button>
         <button class="key">R</button><button class="key">T</button><button class="key">Y</button>
@@ -38,9 +45,12 @@
         <button class="key">J</button><button class="key">K</button><button class="key">L</button><button class="key">Ñ</button>
         <button class="key">Z</button><button class="key">X</button><button class="key">C</button>
         <button class="key">V</button><button class="key">B</button><button class="key">N</button><button class="key">M</button>
+        <button class="key"> </button> <!-- BARRA ESPACIADORA -->
         <button class="key special" id="deleteKey">←</button>
-        <button class="key special" id="sendKey">❤️</button>
+        <button class="key special" id="sendKey">❤️</button> 
     </div>
+    </main>
+
 
     <script>
         const input = document.getElementById("messageInput");
@@ -52,13 +62,15 @@
                 if (key.id === "deleteKey") {
                     input.value = input.value.slice(0, -1); // Borra el último carácter
                 } else if (key.id === "sendKey") {
-                    sendMessage();
+                    sendMessage(); // Call sendMessage when the sendKey is clicked
                 } else {
                     input.value += key.textContent;
                 }
             });
         });
 
+
+          // Enviar mensaje cuando se hace clic en "Enviar"
         function sendMessage() {
             const messageText = input.value.trim();
             if (messageText === "") return;
@@ -70,6 +82,7 @@
 
             input.value = "";
             chat.scrollTop = chat.scrollHeight;
+
 
             // Simulación de respuesta automática
             setTimeout(() => {
@@ -84,7 +97,23 @@
             chat.appendChild(message);
             chat.scrollTop = chat.scrollHeight;
         }
+
+
+        // Detectar teclas físicas del teclado
+        document.addEventListener("keydown", (e) => {
+            const key = e.key;
+
+            if (key === "Backspace") {
+                input.value = input.value.slice(0, -1);
+            } else if (key === "Enter") {
+                sendMessage();
+            } else if (key.length === 1 || key === " ") {
+                input.value += key;
+            }
+        });
     </script>
+
+
     <footer>
         <div class="social-links">
             <p>Redes sociales</p>
