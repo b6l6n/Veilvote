@@ -13,8 +13,6 @@
             <img src="../IMG/veil.png" alt="Logo">
             <h1>VeilVote</h1>
         </div>
-
-
         <nav>
             <ul>
                 <li><a href="#">Mi perfil</a></li>
@@ -23,9 +21,49 @@
             </ul>
         </nav>
     </header>
-    
-    <main>
 
+    <main>
+        <div class="contenedor">
+            <div class="carta" id="eleccion">
+                <h2>Playa</h2>
+                <img src="../IMG/playa.jpeg" alt="playa">
+            </div>
+
+            <div class="botones">
+                <button class="btn" onclick="swipe('si')">Sí</button>
+                <button class="btn" onclick="swipe('no')">No</button>
+            </div>
+
+            <div class="mensaje" id="resultado"></div>
+        </div>
+
+        <div class="contenedor">
+            <div class="carta" id="eleccion">
+                <h2>Monte</h2>
+                <img src="../IMG/monte.jpg" alt="monte">
+            </div>
+
+            <div class="botones">
+                <button class="btn" onclick="swipe(event,'si')">Sí</button>
+                <button class="btn" onclick="swipe(event,'no')">No</button>
+            </div>
+
+            <div class="mensaje" id="resultado"></div>
+        </div>
+
+        <div class="contenedor">
+            <div class="carta" id="eleccion">
+                <h2>Ciudad</h2>
+                <img src="../IMG/ciudad.jpg" alt="ciudad">
+            </div>
+
+            <div class="botones">
+                <button class="btn" onclick="swipe('si')">Sí</button>
+                <button class="btn" onclick="swipe('no')">No</button>
+            </div>
+
+            <div class="mensaje" id="resultado"></div>
+        </div>
     </main>
 
     <footer>
@@ -35,5 +73,7 @@
             <a href="#"><img src="../IMG/instagram.jpeg" alt="Instagram"></a>
         </div>
     </footer>
+
+    <script src="../JS/donde.js"></script>
 </body>
 </html>
