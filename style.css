@@ -1,0 +1,125 @@
+:root {
+    --color-fondo: #1a0923;
+    --color-texto: white;
+    --color-header: #3d2456;
+    --color-hover: plum;
+    --color-menu-bg: #e5c0e5;
+    --color-menu-text: black;
+    --color-sombra: #3d2456;
+    --color-sombra-img: #1a0923;
+
+    --fuente-principal: 'UnifrakturMaguntia', cursive;
+
+    --tam-logo-img: 10rem;
+    --tam-logo-img-altura: 7rem;
+    --tam-logo-h1: 2rem;
+    --tam-enlace: 2rem;
+    --tam-footer-texto: 2rem;
+    --tam-img-menu: 15rem;
+    --tam-img-social: 3rem;
+    --radio-logo: 2rem;
+    --radio-menu-img: 3rem;
+    --radio-social-img: 0.8rem;
+
+    --espaciado-header: 15px;
+    --espaciado-menu: 5rem;
+    --espaciado-menu-gap: 1rem;
+    --espaciado-nav: 3rem;
+    --espaciado-footer: 20px;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: var(--color-header);
+    padding: var(--espaciado-header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: var(--tam-logo-img);
+    height: var(--tam-logo-img-altura);
+    margin-right: 2rem;
+    border-radius: var(--radio-logo);
+}
+
+.logo h1 {
+    font-size: var(--tam-logo-h1);
+    color: var(--color-texto);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 var(--espaciado-nav);
+}
+
+nav ul li a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-size: var(--tam-enlace);
+}
+
+nav ul li a:hover {
+    color: var(--color-hover);
+    transition: color 0.3s;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espaciado-menu-gap);
+    padding: var(--espaciado-menu);
+    background-color: var(--color-menu-bg);
+    color: var(--color-menu-text);
+    text-shadow: var(--color-sombra) 0px 0px 10px;
+    font-size: var(--tam-enlace);
+}
+
+.menu-item {
+    text-align: center;
+}
+
+.menu-item img {
+    width: var(--tam-img-menu);
+    height: var(--tam-img-menu);
+    border-radius: var(--radio-menu-img);
+    box-shadow: var(--color-sombra-img) 0px 0px 10px;
+}
+
+footer {
+    background-color: var(--color-header);
+    padding: var(--espaciado-header);
+    margin-top: var(--espaciado-footer);
+}
+
+.social-links p {
+    margin: 0;
+    font-size: var(--tam-footer-texto);
+}
+
+.social-links img {
+    width: var(--tam-img-social);
+    height: var(--tam-img-social);
+    margin: 0 1rem;
+    border-radius: var(--radio-social-img);
+    box-shadow: var(--color-sombra-img) 0px 0px 10px;
+}
