@@ -1,7 +1,7 @@
 // Lista de lugares para sugerir
 const lugares = [
   { nombre: "Playa", imagen: "IMG/playa.jpeg" },
-  { nombre: "Montaña", imagen: "IMG/monte.jpg" },
+  { nombre: "Montaña", imagen: "IMG/montaña.jpg" },
   { nombre: "Ciudad", imagen: "IMG/ciudad.jpg" },
   { nombre: "Bosque", imagen: "bosque.jpg" },
   { nombre: "Cine", imagen: "IMG/cine.webp" }
